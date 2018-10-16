@@ -1,0 +1,20 @@
+$(document).ready(function() {
+$("#cb1").change(function () {
+    if ($(this).prop("checked")) {
+        // alert("true")
+        $("#thirdtab").addClass("disabled");
+        $("#thirdtab").removeClass("active");
+        $("#thirdtab").removeAttr("data-tab");
+        $("#thirdtabdata").removeClass("active");
+        $("#thirdtabdata").removeAttr("data-tab");
+
+
+    }
+    else {
+        $("#thirdtab").removeClass("disabled");
+        $("#thirdtab").attr("data-tab","third");
+        $("#thirdtabdata").attr("data-tab","third");
+
+    }
+});
+});
