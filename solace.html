@@ -62,24 +62,24 @@ Self Service Request tool
 
 <br>
   <div class="ui column grid">
-  	<p id="createobj">Create Objects</p>
+    <p id="createobj">Create Objects</p>
      <input class="tgl tgl-light" name="tgltoogle" id="cb1" type="checkbox"/>
       <label class="tgl-btn" for="cb1"></label><p id="modobj">Modify Objects</p>
   </div>
 
 </div> <!-- First tab ends -->
+
 <div id="secondtabdata" class="ui bottom noborder tab segment" data-tab="second">
-	zxcv
+  zxcv
 </div> <!-- Seconds tab ends -->
 
 <div id="thirdtabdata" class="ui bottom noborder tab segment" data-tab="third" >
 
-  <br>
-  <div class="ui column grid">
-
+<br>
+<div class="ui column grid">
 
   <div class="ui labeled input">
-  <div class="ui label">
+  <div id="vpnname" class="ui label tealcolor">
   VPN Name
   </div>
   <input type="text" placeholder="Enter the VPN name here">
@@ -89,220 +89,262 @@ Self Service Request tool
   <input class="tgl tgl-light" name="tgltoogle" id="cb2" type="checkbox"/>
   <label class="tgl-btn" for="cb2"></label><p id="modobj">MNR VPN</p>
 
-
-  </div><br>
-
-<!--
-  <div class="ui labeled input">
-  <div class="ui label">
-  VPN Name
-  </div>
-  <input type="text" placeholder="Enter the VPN name here">
 </div>
-<br> -->
+<br>
 
 <div class="ui info message">
 
-<div class="header">
-VPN properties
-</div><br>
+  <div class="header">
+  VPN properties
+  </div><br>
 
 
-<div class="ui labeled input">
-<div class="ui label">
-Max Endpoints
-</div>
-<input id="endpoints" type="text" placeholder="Endpoints">
-</div>
-
-<div class="ui right labeled input">
-<label for="amount" class="ui label">VPN Quota</label>
-<input id="quotasize" type="text" placeholder="Quota size" id="amount">
-<div class="ui basic label">MB</div>
-</div>
-
-
-
-
-<div class="ui form">
-
-<br>
-<div class="ui grid">
-  <div class="four wide column">
-
-
-  <div class="ui message">
-
-  <div id="togglegroup" class="grouped fields">
-  <br>
-  <label>Ingress Flow</label>
-  <div id="todisable" class="grouped fields">
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="ingressflow" checked="checked" value="50" id="50chk">
-  <label>Low 50</label>
+  <div class="ui labeled input">
+  <div id="maxendpoints" class="ui label tealcolor">
+  Max Endpoints
   </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="ingressflow" value="100" id="100chk">
-  <label>Medium 100</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="ingressflow" value="200" id="200chk">
-  <label>Large 200</label>
-  </div>
-  </div>
-  <br>
-  <div id="ingress" class="ui checkbox">
-  <input id="typein" type="checkbox">
-  <label>Type in</label>
-  </div><br><br>
-  <div id="typeinb" class="ui hideme input">
-  <input type="text" placeholder="Ingress Flow value">
-  </div>
-  </div> <!-- to disable ends -->
+  <input id="endpoints" type="text" placeholder="Endpoints">
   </div>
 
-  </div>
-
-  </div>
-  <div class="four wide column">
-
-
-  <div class="ui message">
-
-  <div id="togglegroup2" class="grouped fields">
-  <br>
-  <label>Egress Flow</label>
-  <div id="todisable2" class="grouped fields">
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="egressflow" checked="checked" value="50" id="50chk2">
-  <label>Low 50</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="egressflow" value="100" id="100chk2">
-  <label>Medium 100</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="egressflow" value="200" id="200chk2">
-  <label>Large 200</label>
-  </div>
-  </div>
-  <br>
-  <div id="egress" class="ui checkbox">
-  <input id="typein2" type="checkbox">
-  <label>Type in</label>
-  </div><br><br>
-  <div id="typeinb2" class="ui hideme input">
-  <input type="text" placeholder="Ingress Flow value">
-  </div>
-  </div> <!-- to disable2 ends -->
-  </div>
-
+  <div class="ui right labeled input">
+  <label id="vpnquota" for="amount" class="ui label tealcolor">VPN Quota</label>
+  <input id="quotasize" type="text" placeholder="Quota size" id="amount">
+  <div class="ui basic label">MB</div>
   </div>
 
 
-  </div>
-  <div class="four wide column">
-
-  <div class="ui message">
-
-  <div id="togglegroup3" class="grouped fields">
-  <br>
-  <label>Connection count</label>
-  <div id="todisable3" class="grouped fields">
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="conncount" checked="checked" value="50" id="50chk3">
-  <label>Low 50</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="conncount" value="100" id="100chk3">
-  <label>Medium 100</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="conncount" value="200" id="200chk3">
-  <label>Large 200</label>
-  </div>
-  </div>
-  <br>
-  <div class="ui checkbox">
-  <input id="typein3" type="checkbox">
-  <label>Type in</label>
-  </div><br><br>
-  <div id="typeinb3" class="ui hideme input">
-  <input type="text" placeholder="Ingress Flow value">
-  </div>
-  </div> <!-- to disable2 ends -->
-  </div>
-
-  </div>
 
 
-  </div>
-  <div class="four wide column">
+  <div class="ui form">
 
-  <div class="ui message">
-
-  <div id="togglegroup4" class="grouped fields">
-  <br>
-  <label>Connection count</label>
-  <div id="todisable4" class="grouped fields">
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="subcount" checked="checked" value="50" id="50chk4">
-  <label>Low 50</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="subcount" value="100" id="100chk4">
-  <label>Medium 100</label>
-  </div>
-  </div>
-  <div class="field">
-  <div class="ui toggle checkbox">
-  <input type="radio" name="subcount" value="200" id="200chk4">
-  <label>Large 200</label>
-  </div>
-  </div>
-  <br>
-  <div class="ui checkbox">
-  <input id="typein4" type="checkbox">
-  <label>Type in</label>
-  </div><br><br>
-  <div id="typeinb4" class="ui hideme input">
-  <input type="text" placeholder="Ingress Flow value">
-  </div>
-  </div> <!-- to disable2 ends -->
-  </div>
-
-  </div>
-
-  </div>
-</div>
-
-</div> <!-- UI Form ends -->
+    <br>
+    <div class="ui grid">
+      <div class="four wide column">
 
 
+      <div id="ingressbox" class="ui noshadow teal message">
+
+      <div id="togglegroup" class="grouped fields">
+      <br>
+      <label>Ingress Flow</label>
+      <div id="todisable" class="grouped fields">
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="ingressflow" checked="checked" value="50" id="50chk">
+      <label>Low 50</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="ingressflow" value="100" id="100chk">
+      <label>Medium 100</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="ingressflow" value="200" id="200chk">
+      <label>Large 200</label>
+      </div>
+      </div>
+      <br>
+      <div id="ingress" class="ui checkbox">
+      <input id="typein" type="checkbox">
+      <label>Type in</label>
+      </div><br><br>
+      <div id="typeinb" class="ui hideme input">
+      <input id="typeinbb" type="text" placeholder="Ingress Flow value">
+      </div>
+      </div> <!-- to disable ends -->
+      </div>
+
+      </div>
+
+      </div>
+      <div class="four wide column">
+
+
+      <div id="egressbox" class="ui teal noshadow message">
+
+      <div id="togglegroup2" class="grouped fields">
+      <br>
+      <label>Egress Flow</label>
+      <div id="todisable2" class="grouped fields">
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="egressflow" checked="checked" value="50" id="50chk2">
+      <label>Low 50</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="egressflow" value="100" id="100chk2">
+      <label>Medium 100</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="egressflow" value="200" id="200chk2">
+      <label>Large 200</label>
+      </div>
+      </div>
+      <br>
+      <div id="egress" class="ui checkbox">
+      <input id="typein2" type="checkbox">
+      <label>Type in</label>
+      </div><br><br>
+      <div id="typeinb2" class="ui hideme input">
+      <input type="text" placeholder="Ingress Flow value">
+      </div>
+      </div> <!-- to disable2 ends -->
+      </div>
+
+      </div>
+
+
+      </div>
+      <div class="four wide column">
+
+      <div class="ui noshadow teal message">
+
+      <div id="togglegroup3" class="grouped fields">
+      <br>
+      <label>Connection count</label>
+      <div id="todisable3" class="grouped fields">
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="conncount" checked="checked" value="50" id="50chk3">
+      <label>Low 50</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="conncount" value="100" id="100chk3">
+      <label>Medium 100</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="conncount" value="200" id="200chk3">
+      <label>Large 200</label>
+      </div>
+      </div>
+      <br>
+      <div class="ui checkbox">
+      <input id="typein3" type="checkbox">
+      <label>Type in</label>
+      </div><br><br>
+      <div id="typeinb3" class="ui hideme input">
+      <input type="text" placeholder="Ingress Flow value">
+      </div>
+      </div> <!-- to disable2 ends -->
+      </div>
+
+      </div>
+
+
+      </div>
+      <div class="four wide column">
+
+      <div class="ui noshadow teal message">
+
+      <div id="togglegroup4" class="grouped fields">
+      <br>
+      <label>Connection count</label>
+      <div id="todisable4" class="grouped fields">
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="subcount" checked="checked" value="50" id="50chk4">
+      <label>Low 50</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="subcount" value="100" id="100chk4">
+      <label>Medium 100</label>
+      </div>
+      </div>
+      <div class="field">
+      <div class="ui toggle checkbox">
+      <input type="radio" name="subcount" value="200" id="200chk4">
+      <label>Large 200</label>
+      </div>
+      </div>
+      <br>
+      <div class="ui checkbox">
+      <input id="typein4" type="checkbox">
+      <label>Type in</label>
+      </div><br><br>
+      <div id="typeinb4" class="ui hideme input">
+      <input type="text" placeholder="Ingress Flow value">
+      </div>
+      </div> <!-- to disable2 ends -->
+      </div>
+
+      </div>
+
+      </div>
+    </div>
+    <br>
+
+    <div class="header">
+      COB Setup
+    </div><br>
+
+    <div class="ui toggle checkbox">
+      <input type="checkbox" name="public">
+      <label>Required COB Setup</label>
+    </div>
+
+    <div class="ui teal noshadow message">
+      <div class="header">
+        Replicated Topic
+      </div>
+      <p>By default All topics (">") and all Queues ("#P2P/QUE/>") are replicated with async</p>
+
+      <div class="ui labeled input">
+        <div class="ui tealcolor label">
+          Add Topic for Sync Mode
+        </div>
+        <input type="text" placeholder="a/b/c">
+      </div>
+    </div>
+
+    <div class="ui labeled input">
+      <div class="ui tealcolor label">
+        Ack Intervals
+      </div>
+      <input type="text" placeholder="default is 20">
+    </div><br><br>
+
+
+
+  </div> <!-- UI Form ends -->
 
 </div> <!-- Main message in tab -->
 
+<!--
+...........
+: Buttons :
+:.........:
+-->
 
+<button class="ui olive button">
+  Validate
+</button>
+
+<button class="ui blue button">
+  Download
+</button>
+
+<div class="ui animated button" tabindex="0">
+  <div class="visible content">Next</div>
+  <div class="hidden content">
+    <i class="right arrow icon"></i>
+  </div>
+</div>
 
 </div> <!-- Third tab ends -->
+
 <div id="fourthtabdata" class="ui bottom noborder tab segment" data-tab="fourth" >
     fourth
 </div> <!-- fourth tab ends -->
@@ -316,7 +358,7 @@ Max Endpoints
 </div> <!-- sixth tab ends -->
 
 <div id="seventhtabdata" class="ui bottom noborder tab segment" data-tab="seventh" >
-    
+
 
 
 
@@ -338,4 +380,5 @@ Max Endpoints
 
 </body>
 </html>
+
 
