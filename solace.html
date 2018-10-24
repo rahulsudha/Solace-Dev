@@ -12,6 +12,7 @@ integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
 crossorigin="anonymous"></script>
 <script src="components/accordion.js"></script>
 <script src="semantic.min.js"></script>
+<script src="validatorfunct.js"></script>
 
 <title>Solace</title>
 </head>
@@ -31,11 +32,11 @@ crossorigin="anonymous"></script>
   <i class="braille icon "></i>
   Solace Request Form
 </h2> -->
-<br>
-<div class="ui left aligned icon header">
+
+<!-- <div class="ui left aligned icon header">
 <div class="gooeyclass gooey"></div><br>
 Self Service Request tool
-</div>
+</div> -->
 
 
 
@@ -82,7 +83,7 @@ Self Service Request tool
   <div id="vpnname" class="ui label tealcolor">
   VPN Name
   </div>
-  <input type="text" placeholder="Enter the VPN name here">
+  <input id="vpnnameinput" type="text" placeholder="Enter the VPN name here">
   </div>
 
   <p id="createobj">Guaranteed VPN</p>
@@ -193,7 +194,7 @@ Self Service Request tool
       <label>Type in</label>
       </div><br><br>
       <div id="typeinb2" class="ui hideme input">
-      <input type="text" placeholder="Ingress Flow value">
+      <input id="egressvalue" type="text" placeholder="Egress Flow value">
       </div>
       </div> <!-- to disable2 ends -->
       </div>
@@ -234,7 +235,7 @@ Self Service Request tool
       <label>Type in</label>
       </div><br><br>
       <div id="typeinb3" class="ui hideme input">
-      <input type="text" placeholder="Ingress Flow value">
+      <input id="conncount" type="text" placeholder="Connection count value">
       </div>
       </div> <!-- to disable2 ends -->
       </div>
@@ -305,7 +306,7 @@ Self Service Request tool
         <div class="ui tealcolor label">
           Add Topic for Sync Mode
         </div>
-        <input type="text" placeholder="a/b/c">
+        <input id="topicvalue" type="text" placeholder="a/b/c">
       </div>
     </div>
 
@@ -313,7 +314,7 @@ Self Service Request tool
       <div class="ui tealcolor label">
         Ack Intervals
       </div>
-      <input type="text" placeholder="default is 20">
+      <input id="ackintervals" type="text" placeholder="default is 20">
     </div><br><br>
 
 
@@ -328,20 +329,20 @@ Self Service Request tool
 :.........:
 -->
 
-<button class="ui olive button">
-  Validate
+<button onclick="validatecheck_forVPN();" class="ui olive button">
+  Validate and Parse
 </button>
 
-<button class="ui blue button">
-  Download
+<button id="downloadbutton" class="ui disabled blue button">
+  Download JSON
 </button>
 
-<div class="ui animated button" tabindex="0">
+<!-- <div class="ui animated button" tabindex="0">
   <div class="visible content">Next</div>
   <div class="hidden content">
     <i class="right arrow icon"></i>
   </div>
-</div>
+</div> -->
 
 </div> <!-- Third tab ends -->
 
@@ -380,5 +381,4 @@ Self Service Request tool
 
 </body>
 </html>
-
 
